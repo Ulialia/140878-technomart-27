@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Ульяна Павлушина](https://up.htmlacademy.ru/htmlcss/27/user/140878).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo).
 
 ---
 
