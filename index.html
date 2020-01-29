@@ -28,10 +28,12 @@
                   alt="Логотип магазина 'Техномарт'"
                   />
                 </a>
-                <div class="button-search">
+              <form>
+                <div class="button-search" >
                   <button class="serch-button-logo" type="submit"></button>
                 </div>
                 <input class="search-input" type="text" placeholder="Поиск:" />
+              </form>
               </div>
               <div class="tabs">
                 <a class="tab-link" href="#">Закладки:0</a>
@@ -325,39 +327,45 @@
               Хороший интернет-магазин отличается от плохого не только ценами!<br />
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
-            <ul class="delivery-list">
-              <li class="delivery-item">
-                <a class="deliveri">
+            <section class="slider">
+              <div class="container">
+                <h2 class="visually-hidden">Преимущества</h2>
+                <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+                <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+                <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+                <div class="slider-controls">
+                  <label class="slider-controls-item slider-controls-item--1" for="product-1">Доставка</label>
+                  <label class="slider-controls-item slider-controls-item--2" for="product-2">Гарантия</label>
+                  <label class="slider-controls-item slider-controls-item--3" for="product-3">Кредит</label>
+                </div>
+            <ul class="services-list">
+              <li class="services-item">
                   Доставка
-                  <p class="visually-hidden">
+                  <p>
                     Мы с удовольствием доставим ваш товар прямо к вашему подъезду
                     совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
                     на ваш этаж!
                   </p>
-                </a>
               </li>
-              <li class="delivery-item">
-                <a class="deliveri">
+              <li class="services-item">
                   Гарантия
-                  <p class="visually-hidden">
+                  <p>
                     Если купленный у нас товар поломается или заискрит, а также в
                     случае пожара, спровоцированного его возгаранием, вы всегда
                     можете быть уверены в нашей гарантии. Мы обменяем сгоревший
                     товар на новый. Дом уж восстановите как-нибудь сами.
                   </p>
-                </a>
               </li>
-              <li class="delivery-item">
-                <a class="deliveri">
+              <li class="services-item">
                   Кредит
-                  <p class="visually-hidden">
+                  <p>
                     Залезть в долговую яму стало проще! Кредитные консультанты
                     придут вам на помощь.
                   </p>
-                </a>
                 <a class="button" href="credit.html">Отправить заявку</a>
               </li>
             </ul>
+              </div>
           </section>
           <div class="company-wrapper">
             <section class="about-company">

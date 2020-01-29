@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 1200px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+}
+
+.main-header {
+  background-color: #eeeeee;
+
+  /* Временно для демонстрации */
+  height: 50px;
+}
+.slider {
+  position: relative;
+
+  background-color: #f4f7f9;
+}
+.slider-controls label{
+  position: relative;
+
+  display:block;
+  width: 240px;
+  height: 61px;
+
+  cursor: pointer;
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #32425c;
+}
+.services-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.services-item {
+  display: none;
+  padding: 78px 0 80px 0;
+}
+.services-item:nth-child(1) {
+  background-image: url("img/slider-delivery.png");
+  background-repeat: no-repeat;
+  background-position: 93% 18px;
+}
+
+.services-item:nth-child(2) {
+  background-image: url("img/slider-guarantee.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+}
+
+.services-item:nth-child(3) {
+  background-image: url("img/slider-credit.png");
+  background-repeat: no-repeat;
+  background-position: 50% 20px;
+}
+
+#product-1:checked ~ .services-list .services-item:nth-child(1) {
+  display: block;
+}
+
+#product-2:checked ~ .services-list .services-item:nth-child(2) {
+  display: block;
+}
+
+#product-3:checked ~ .services-list.services-item:nth-child(3) {
+  display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+}
+
+.services-item h3 {
+  max-width: 600px;
+  margin: 0;
+  margin-bottom: 27px;
+
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.services-item p {
+  max-width: 430px;
+  margin: 0;
+  margin-bottom: 38px;
+}
+
+.button {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #e74246;
+}
+
+.button:active {
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
