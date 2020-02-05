@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-.container {
+.services-container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -28,25 +28,34 @@ a {
   clip: rect(0, 0, 0, 0);
 }
 
-.main-header {
-  background-color: #eeeeee;
-
-  /* Временно для демонстрации */
-  height: 50px;
-}
-.slider {
+.services {
   position: relative;
 
   background-color: #f4f7f9;
 }
-.slider-controls label{
+.controls-services label{
   position: relative;
-
   display:block;
   width: 240px;
   height: 61px;
-
+  padding-left:23px;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  background-color: #32425c;
   cursor: pointer;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+}
+.controls-services label:hover,
+.controls-services label:focus,
+.controls-services label:active{
   box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
   background-color: #ffffff;
   font-family: Cuprum;
@@ -59,6 +68,8 @@ a {
   text-align: left;
   color: #32425c;
 }
+
+
 .services-list {
   margin: 0;
   padding: 0;
@@ -82,9 +93,9 @@ a {
 }
 
 .services-item:nth-child(3) {
-  background-image: url("img/slider-credit.png");
+  background-image: url("img/credit.png");
   background-repeat: no-repeat;
-  background-position: 50% 20px;
+  background-position: top center;
 }
 
 #product-1:checked ~ .services-list .services-item:nth-child(1) {
@@ -95,14 +106,11 @@ a {
   display: block;
 }
 
-#product-3:checked ~ .services-list.services-item:nth-child(3) {
+#product-3:checked ~ .services-list .services-item:nth-child(3) {
   display: block;
 }
 
-#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
-#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
-#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
-}
+
 
 .services-item h3 {
   max-width: 600px;
@@ -118,6 +126,15 @@ a {
   max-width: 430px;
   margin: 0;
   margin-bottom: 38px;
+  font-family: PTSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
 }
 
 .button {
