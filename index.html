@@ -4,16 +4,10 @@
     <title>Technomart</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link
-      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic"
-      rel="stylesheet"
-      />
-      <link
-        href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic"
-        rel="stylesheet"
-        />
-        <link href="css/normalize.css" rel="stylesheet" />
-        <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet"/>
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
       </head>
       <body>
         <header class="main-header">
@@ -28,12 +22,10 @@
                   alt="Логотип магазина 'Техномарт'"
                   />
                 </a>
-              <form>
                 <div class="button-search" >
                   <button class="serch-button-logo" type="submit"></button>
                 </div>
                 <input class="search-input" type="text" placeholder="Поиск:" />
-              </form>
               </div>
               <div class="tabs">
                 <a class="tab-link" href="#">Закладки:0</a>
@@ -62,11 +54,25 @@
                 <li class="login-vhod">
                   <a class="login-link" href="login.html">Войти</a>
                 </li>
+                <div class="header-actions">
+                  <ul>
+                    <li>
+                      <a class="link-user" href="#">Равшан Джамшутович</a>
+                    </li>
+                    <li>
+                      <a class="myorders" hreflang="#" >Мои заказы</a>
+                    </li>
+                    <li>
+                      <a class="cabinet" href="#" >Личный кабинет</a>
+                    </li>
+                  </ul>
+                </div>
                 <li class="registering">
                   <a class="registering-link" href="#">Регистрация</a>
                 </li>
               </ul>
             </div>
+
             <nav class="main-navigation-wrapper">
               <ul class="site-navigation">
                 <li><a href="main.html">Главная</a></li>
@@ -128,13 +134,11 @@
                             <label
                               class="slider-controls-item slider-controls-item--1"
                               for="product-1"
-                            >Первый</label
-                            >
+                            >Первый</label>
                             <label
                               class="slider-controls-item slider-controls-item--2"
                               for="product-2"
-                            >Второй</label
-                            >
+                            >Второй</label>
                           </div>
                           <ul class="slider-list">
                             <li class="slider-item">
@@ -269,19 +273,19 @@
                   </a>
                 </li>
                 <li class="brands-dewalt">
-                  <a href="brand-DeWALT.html" class="brands-image">
+                  <a href="brand-dewalt.html" class="brands-image">
                     <img
-                    src="img/DeWALT.png"
+                    src="img/dewalt.png"
                     width="146"
                     height="44"
-                    alt="DeWALT"
+                    alt="dewalt"
                     />
                   </a>
                 </li>
                 <li class="brands-interskol">
-                  <a href="brand-интерскол.html" class="brands-image">
+                  <a href="brand-interskol.html" class="brands-image">
                     <img
-                    src="img/интерскол.png"
+                    src="img/interskol.png"
                     width="200"
                     height="88"
                     alt="интерскол"
@@ -327,17 +331,7 @@
               Хороший интернет-магазин отличается от плохого не только ценами!<br />
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
-            <section class="slider">
-              <div class="container">
-                <h2 class="visually-hidden">Преимущества</h2>
-                <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-                <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-                <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-                <div class="slider-controls">
-                  <label class="slider-controls-item slider-controls-item--1" for="product-1">Доставка</label>
-                  <label class="slider-controls-item slider-controls-item--2" for="product-2">Гарантия</label>
-                  <label class="slider-controls-item slider-controls-item--3" for="product-3">Кредит</label>
-                </div>
+
             <ul class="services-list">
               <li class="services-item">
                   Доставка
@@ -510,6 +504,49 @@
                   </div>
                 </div>
               </footer>
+
+              <section class="modal modal-login">
+                <h2 class="visually-hidden">Регистрация</h2>
+                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <label  for="user-login">Ваше имя:</label>
+                    <input class="login-icon-user" id="user-login"  type="text"name="login"placeholder="Имя и Фамилия" >
+                  </p>
+                  <button class="button" type="submit">
+                    Отправить
+                  </button>
+                </form>
+
+              </section>
+
+              <section class="modal modal-letter">
+                <form class="letter" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                    <label  for="user-login">Ваше имя:</label>
+                    <input class="login-icon-user" id="user-login"  type="text" name="login" placeholder="Имя и Фамилия" >
+                  </p>
+                  <p>
+                    <label for="email">Ваш e-mail:</label>
+
+                    <input type="email" id="email" pattern=".+@globex.com" size="30" required placeholder="email@example.com">
+                  </p>
+                  <p>
+                    <label for="text">Текст письма:</label>
+
+                    <input class="text-letter" type="text" id="text" name="latter" placeholder="В свободной форме">
+                  </p>
+
+                  <button class="button" type="submit">
+                    Отправить
+                  </button>
+                </form>
+                <button class="modal-close" type="button">
+                  Закрыть
+                </button>
+              </section>
+
+
+
               <section class="modal modal-map">
                 <h2 class="visually-hidden">Как до нас добраться</h2>
                 <span class="modal-close">x</span>

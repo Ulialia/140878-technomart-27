@@ -179,6 +179,7 @@ background:url("img/icon-search-active.svg");
   line-height: 18px;
   text-decoration: none;
 }
+
 .cart::before {
   content: "";
 
@@ -1072,13 +1073,7 @@ a {
   }
 
 
-. li{
-  min-width: 940px;
-  background-image: url("img/slider-delivery.png");
-  background-repeat: no-repeat;
-  background-position: top center;
 
-}
 
 
 .company-wrapper {
@@ -1474,40 +1469,3 @@ span {
   color: #000000;
 }
 
-.half-width input {
-  width: 78px;
-  border: solid 2px #b5b5b5;
-  background-color: #ffffff;
-  border-radius: 3px;
-  margin: 0 auto;
-  padding: 14px 126px 15px 16px;
-  font-family: Cuprum;
-  font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.38;
-  letter-spacing: normal;
-  text-align: left;
-  color: #999999;
-}
-
-.buttons-modal input[type="submit"] {
-  display: block;
-  width: 460px;
-  height: auto;
-  margin: 144px 80px 37px 0px;
-  padding: 14px 198px;
-  background-color: #ee3643;
-  border: none;
-  border-radius: 3px;
-  font-family: Cuprum;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.29;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-}
