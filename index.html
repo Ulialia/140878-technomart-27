@@ -157,7 +157,7 @@
       <section class="catalog">
         <div class="title-catalog">
           <h2>Популярные товары:</h2>
-          <a class="button-catalog" href="catalog.html"
+          <a class="button-catalog button" href="catalog.html"
           >Все популярные товары</a
           >
         </div>
@@ -241,14 +241,14 @@
       <section class="brands">
         <div class="title-brands">
           <h2>Популярные производители:</h2>
-          <a class="button-brands" href="company.html"
+          <a class="button-brands button " href="company.html"
           >Все популярные производители</a
           >
         </div>
         <ul class="brands-list">
           <li class="brands-bosch">
             <a href="brand-bosсh.html" class="brands-image">
-              <img src="img/bosch.png" width="126" height="37" alt="bosch" />
+              <img src="img/bosch.png" width="126" height="37" alt="bosch">
             </a>
           </li>
           <li class="brands-makita">
@@ -257,8 +257,7 @@
               src="img/makita.png"
               width="123"
               height="140"
-              alt="makita"
-              />
+              alt="makita">
             </a>
           </li>
           <li class="brands-dewalt">
@@ -268,7 +267,7 @@
               width="146"
               height="44"
               alt="dewalt"
-              />
+              >
             </a>
           </li>
           <li class="brands-interskol">
@@ -278,7 +277,7 @@
               width="200"
               height="88"
               alt="интерскол"
-              />
+              >
             </a>
           </li>
           <li class="brands-hitachi">
@@ -287,84 +286,36 @@
               src="img/hitachi.png"
               width="169"
               height="31"
-              alt="hitachi"
-              />
+              alt="hitachi">
             </a>
           </li>
           <li class="brands-lg">
             <a href="brand-lg.html" class="brands-image">
-              <img src="img/lg.png" width="121" height="73" alt="lg" />
+              <img src="img/lg.png" width="121" height="73" alt="lg">
             </a>
           </li>
           <li class="brands-aeg">
             <a href="brand-aeg.html" class="brands-image">
-              <img src="img/aeg.png" width="151" height="96" alt="aeg" />
+              <img src="img/aeg.png" width="151" height="96" alt="aeg">
             </a>
           </li>
           <li class="brands-matabo">
             <a href="brand-metabo.html" class="brands-image">
-              <img
-              src="img/metabo.png"
-              width="204"
-              height="69"
-              alt="metabo"
-              />
+              <img src="img/metabo.png" width="204" height="69" alt="metabo">
             </a>
           </li>
         </ul>
       </section>
     </div>
-    <!---
-    <section class="services-slider">
-      <div class="services-container">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-        <div class="slider-controls-services">
-          <label class="slider-controls-item slider-controls-item--1" for="product-1">Доставка</label>
-          <label class="slider-controls-item slider-controls-item--2" for="product-2">Гарантия</label>
-          <label class="slider-controls-item slider-controls-item--3" for="product-3">Кредит</label>
-        </div>
 
-    <ul class="services-list">
-      <li class="services-item">
-        <a class="">
-          Доставка
-          <p>
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-            на ваш этаж!
-          </p>
-        </a>
-      </li>
-      <li class="services-item">
-        <a class="">
-          Гарантия
-          <p>
-            Если купленный у нас товар поломается или заискрит, а также в
-            случае пожара, спровоцированного его возгаранием, вы всегда
-            можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-            товар на новый. Дом уж восстановите как-нибудь сами.
-          </p>
-        </a>
-      </li>
-      <li class="services-item">
-        <a class="">
-          Кредит
-          <p>
-            Залезть в долговую яму стало проще! Кредитные консультанты
-            придут вам на помощь.
-          </p>
-          <a class="button">ОТПРАВИТЬ ЗАЯВКУ</a>
-        </a>
-      </li>
-    </ul>
-      </div>
-    </section>
-    -->
+    <div class="dervices-wrapper" >
     <section class="services">
+
       <div class="services-container">
+        <h2>Сервисы</h2>
+        <p>
+          Хороший интернет-магазин отличается от плохого не только ценами!<br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <h2 class="visually-hidden">Преимущества</h2>
         <input class="visually-hidden" type="radio" id="prod-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="prod-2" name="toggle">
@@ -376,9 +327,9 @@
         </div>
 
     <ul class="services-list">
-      <li class="services-item">
+      <li class="services-item" id="slide1">
         <a class="">
-          Доставка
+          <h3>Доставка</h3>
           <p>
             Мы с удовольствием доставим ваш товар прямо к вашему подъезду
             совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
@@ -386,9 +337,9 @@
           </p>
         </a>
       </li>
-      <li class="services-item">
+      <li class="services-item" id="slide2">
         <a class="">
-          Гарантия
+         <h3>Гарантия</h3>
           <p>
             Если купленный у нас товар поломается или заискрит, а также в
             случае пожара, спровоцированного его возгаранием, вы всегда
@@ -397,9 +348,9 @@
           </p>
         </a>
       </li>
-      <li class="services-item">
+      <li class="services-item" id="slide3">
         <a class="">
-          Кредит
+          <h3>Кредит</h3>
           <p>
             Залезть в долговую яму стало проще! Кредитные консультанты
             придут вам на помощь.
@@ -410,6 +361,8 @@
     </ul>
       </div>
     </section>
+  </div>
+
   <div class="company-wrapper">
     <section class="about-company">
       <h2>Компания "ТЕХНОМАРТ"</h2>
@@ -422,12 +375,12 @@
         Мы можем доставить ваш товар в самые отдаленные точки России!
         Техномарт работает со многими транспортными компаниями:
       </p>
-      <ul>
+      <ul class="dash">
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a class="button-co" href="aboutcompany.html">подробнее о компании</a>
+      <a class="button-co button" href="aboutcompany.html">подробнее о компании</a>
     </section>
     <section class="contacts">
       <h2>контакты</h2>
@@ -514,8 +467,8 @@
       </a>
     </li>
     <li>
-      <a class="social-button" href="#"
-      ><span class="visually-hidden">Фейсбук</span>
+      <a class="social-button" href="#">
+        <span class="visually-hidden">Фейсбук</span>
       <svg
       xmlns="http://www.w3.org/2000/svg"
       width="12"
@@ -530,8 +483,8 @@
   </a>
 </li>
 <li>
-  <a class="social-button" href="#"
-  ><span class="visually-hidden">Инстаграм</span>
+  <a class="social-button" href="#">
+  <span class="visually-hidden">Инстаграм</span>
   <svg
   xmlns="http://www.w3.org/2000/svg"
   width="21"
